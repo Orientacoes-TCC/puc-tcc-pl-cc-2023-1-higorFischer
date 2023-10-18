@@ -1,0 +1,351 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder\\BadSmellFinder.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmell.Domain.Roslyn\\BadSmell.Domain.Roslyn.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmell.Domain.Roslyn\\BadSmell.Domain.Roslyn.csproj",
+        "projectName": "BadSmell.Domain.Roslyn",
+        "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmell.Domain.Roslyn\\BadSmell.Domain.Roslyn.csproj",
+        "packagesPath": "C:\\Users\\HigorLopes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmell.Domain.Roslyn\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HigorLopes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Domain\\BadSmellFinder.Domain.csproj": {
+                "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Domain\\BadSmellFinder.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.3.4, )"
+            },
+            "Microsoft.CodeAnalysis.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Domain\\BadSmellFinder.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Domain\\BadSmellFinder.Domain.csproj",
+        "projectName": "BadSmellFinder.Domain",
+        "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Domain\\BadSmellFinder.Domain.csproj",
+        "packagesPath": "C:\\Users\\HigorLopes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HigorLopes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj": {
+                "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.CSharp": {
+              "target": "Package",
+              "version": "[4.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Services\\BadSmellFinder.Services.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Services\\BadSmellFinder.Services.csproj",
+        "projectName": "BadSmellFinder.Services",
+        "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Services\\BadSmellFinder.Services.csproj",
+        "packagesPath": "C:\\Users\\HigorLopes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Services\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HigorLopes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmell.Domain.Roslyn\\BadSmell.Domain.Roslyn.csproj": {
+                "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmell.Domain.Roslyn\\BadSmell.Domain.Roslyn.csproj"
+              },
+              "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Domain\\BadSmellFinder.Domain.csproj": {
+                "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Domain\\BadSmellFinder.Domain.csproj"
+              },
+              "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj": {
+                "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder\\BadSmellFinder.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder\\BadSmellFinder.csproj",
+        "projectName": "BadSmellFinder",
+        "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder\\BadSmellFinder.csproj",
+        "packagesPath": "C:\\Users\\HigorLopes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HigorLopes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmell.Domain.Roslyn\\BadSmell.Domain.Roslyn.csproj": {
+                "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmell.Domain.Roslyn\\BadSmell.Domain.Roslyn.csproj"
+              },
+              "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Domain\\BadSmellFinder.Domain.csproj": {
+                "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Domain\\BadSmellFinder.Domain.csproj"
+              },
+              "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Services\\BadSmellFinder.Services.csproj": {
+                "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Services\\BadSmellFinder.Services.csproj"
+              },
+              "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj": {
+                "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj",
+        "projectName": "Util",
+        "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj",
+        "packagesPath": "C:\\Users\\HigorLopes\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\HigorLopes\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "MathNet.Numerics": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

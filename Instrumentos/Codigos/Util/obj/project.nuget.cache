@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "CdmD11OOhjVphzUNfGpizJoGhquO/QSamZ49QtxDNSNp2eLR23IpVgLFb444Pb98oiWsEH1zdkEbiw1g06deYQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\HigorLopes\\.nuget\\packages\\mathnet.numerics\\5.0.0\\mathnet.numerics.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

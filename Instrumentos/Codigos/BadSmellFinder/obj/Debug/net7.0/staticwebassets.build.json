@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "S0VQQKIgNVoAyj4qnEVEqUd5nnqvXw1kWG85V0/Tl0o=",
+  "Source": "BadSmellFinder",
+  "BasePath": "_content/BadSmellFinder",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

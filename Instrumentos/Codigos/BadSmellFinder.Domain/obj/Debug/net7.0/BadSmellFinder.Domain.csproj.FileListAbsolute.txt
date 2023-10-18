@@ -1,0 +1,15 @@
+C:\Users\HigorLopes\source\repos\BadSmellFinder.App\BadSmellFinder.Domain\bin\Debug\net7.0\BadSmellFinder.Domain.deps.json
+C:\Users\HigorLopes\source\repos\BadSmellFinder.App\BadSmellFinder.Domain\bin\Debug\net7.0\BadSmellFinder.Domain.dll
+C:\Users\HigorLopes\source\repos\BadSmellFinder.App\BadSmellFinder.Domain\bin\Debug\net7.0\BadSmellFinder.Domain.pdb
+C:\Users\HigorLopes\source\repos\BadSmellFinder.App\BadSmellFinder.Domain\obj\Debug\net7.0\BadSmellFinder.Domain.csproj.AssemblyReference.cache
+C:\Users\HigorLopes\source\repos\BadSmellFinder.App\BadSmellFinder.Domain\obj\Debug\net7.0\BadSmellFinder.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\HigorLopes\source\repos\BadSmellFinder.App\BadSmellFinder.Domain\obj\Debug\net7.0\BadSmellFinder.Domain.AssemblyInfoInputs.cache
+C:\Users\HigorLopes\source\repos\BadSmellFinder.App\BadSmellFinder.Domain\obj\Debug\net7.0\BadSmellFinder.Domain.AssemblyInfo.cs
+C:\Users\HigorLopes\source\repos\BadSmellFinder.App\BadSmellFinder.Domain\obj\Debug\net7.0\BadSmellFinder.Domain.csproj.CoreCompileInputs.cache
+C:\Users\HigorLopes\source\repos\BadSmellFinder.App\BadSmellFinder.Domain\obj\Debug\net7.0\BadSmellFinder.Domain.dll
+C:\Users\HigorLopes\source\repos\BadSmellFinder.App\BadSmellFinder.Domain\obj\Debug\net7.0\refint\BadSmellFinder.Domain.dll
+C:\Users\HigorLopes\source\repos\BadSmellFinder.App\BadSmellFinder.Domain\obj\Debug\net7.0\BadSmellFinder.Domain.pdb
+C:\Users\HigorLopes\source\repos\BadSmellFinder.App\BadSmellFinder.Domain\obj\Debug\net7.0\ref\BadSmellFinder.Domain.dll
+C:\Users\HigorLopes\source\repos\BadSmellFinder.App\BadSmellFinder.Domain\bin\Debug\net7.0\Util.dll
+C:\Users\HigorLopes\source\repos\BadSmellFinder.App\BadSmellFinder.Domain\bin\Debug\net7.0\Util.pdb
+C:\Users\HigorLopes\source\repos\BadSmellFinder.App\BadSmellFinder.Domain\obj\Debug\net7.0\BadSmellFinder.Domain.csproj.CopyComplete
