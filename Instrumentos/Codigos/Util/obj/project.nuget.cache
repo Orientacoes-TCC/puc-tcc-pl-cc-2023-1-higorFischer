@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "CdmD11OOhjVphzUNfGpizJoGhquO/QSamZ49QtxDNSNp2eLR23IpVgLFb444Pb98oiWsEH1zdkEbiw1g06deYQ==",
+  "dgSpecHash": "8e/eHf3QFzMRbDsWXW3JlRAw1jThEIa3OmHWPE+vXnctjpm+LLL5PyAQKmzbeAROqNmJJoOjf6Po7A3sEmIdCw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj",
+  "projectFilePath": "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\Util\\Util.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HigorLopes\\.nuget\\packages\\mathnet.numerics\\5.0.0\\mathnet.numerics.5.0.0.nupkg.sha512"
   ],

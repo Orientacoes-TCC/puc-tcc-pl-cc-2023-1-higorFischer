@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Tu5DgJpsl77W2/2zQSSz7RsHCuzGGQuQg+4WGaoddpygyU3MZvq9W4aPzdqAwQyPFr9mtPRALNQ+SjlwiinFSQ==",
+  "dgSpecHash": "O4BDIiNZ8hzecPkm6xeyPEA5ZbPkCQlZ2D8S1sWEMuYgMllxA9ikkbgLeSxWA/fBclHW3zRj0oy95uisNhNVnA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder\\BadSmellFinder.csproj",
+  "projectFilePath": "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\BadSmellFinder\\BadSmellFinder.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HigorLopes\\.nuget\\packages\\mathnet.numerics\\5.0.0\\mathnet.numerics.5.0.0.nupkg.sha512",
     "C:\\Users\\HigorLopes\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.11\\microsoft.aspnetcore.openapi.7.0.11.nupkg.sha512",

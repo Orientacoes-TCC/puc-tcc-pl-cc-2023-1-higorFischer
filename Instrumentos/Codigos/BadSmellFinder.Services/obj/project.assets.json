@@ -1089,11 +1089,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Services\\BadSmellFinder.Services.csproj",
+      "projectUniqueName": "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\BadSmellFinder.Services\\BadSmellFinder.Services.csproj",
       "projectName": "BadSmellFinder.Services",
-      "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Services\\BadSmellFinder.Services.csproj",
+      "projectPath": "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\BadSmellFinder.Services\\BadSmellFinder.Services.csproj",
       "packagesPath": "C:\\Users\\HigorLopes\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Services\\obj\\",
+      "outputPath": "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\BadSmellFinder.Services\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HigorLopes\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1110,14 +1110,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmell.Domain.Roslyn\\BadSmell.Domain.Roslyn.csproj": {
-              "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmell.Domain.Roslyn\\BadSmell.Domain.Roslyn.csproj"
+            "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\BadSmell.Domain.Roslyn\\BadSmell.Domain.Roslyn.csproj": {
+              "projectPath": "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\BadSmell.Domain.Roslyn\\BadSmell.Domain.Roslyn.csproj"
             },
-            "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Domain\\BadSmellFinder.Domain.csproj": {
-              "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmellFinder.Domain\\BadSmellFinder.Domain.csproj"
+            "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\BadSmellFinder.Domain\\BadSmellFinder.Domain.csproj": {
+              "projectPath": "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\BadSmellFinder.Domain\\BadSmellFinder.Domain.csproj"
             },
-            "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj": {
-              "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj"
+            "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\Util\\Util.csproj": {
+              "projectPath": "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\Util\\Util.csproj"
             }
           }
         }

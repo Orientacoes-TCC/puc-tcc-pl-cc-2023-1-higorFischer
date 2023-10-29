@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj": {}
+    "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\Util\\Util.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj": {
+    "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\Util\\Util.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj",
+        "projectUniqueName": "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\Util\\Util.csproj",
         "projectName": "Util",
-        "projectPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\Util.csproj",
+        "projectPath": "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\Util\\Util.csproj",
         "packagesPath": "C:\\Users\\HigorLopes\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\Util\\obj\\",
+        "outputPath": "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\Util\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HigorLopes\\AppData\\Roaming\\NuGet\\NuGet.Config",

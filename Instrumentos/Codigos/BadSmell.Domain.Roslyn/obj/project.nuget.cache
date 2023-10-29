@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lYuRDc2CGkKIik5V2MdRFOhAOJf5y9Vw6WrPw8+LBmxN48wUbbkEHliEKTyY1DnO51hE1reYN3IXSa8Jyg1V0Q==",
+  "dgSpecHash": "kWJ/Tduj5eL1XxTYcIISv64j0gaTVJAKsbfKrdugAfnVudi5NguN1kqxOvyfMEnQXPJGZ7QBTZOCfsvC+aMfgQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\HigorLopes\\source\\repos\\BadSmellFinder.App\\BadSmell.Domain.Roslyn\\BadSmell.Domain.Roslyn.csproj",
+  "projectFilePath": "C:\\Users\\HigorLopes\\github-classroom\\Orientacoes-TCC\\puc-tcc-pl-cc-2023-1-higorFischer\\Instrumentos\\Codigos\\BadSmell.Domain.Roslyn\\BadSmell.Domain.Roslyn.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\HigorLopes\\.nuget\\packages\\mathnet.numerics\\5.0.0\\mathnet.numerics.5.0.0.nupkg.sha512",
     "C:\\Users\\HigorLopes\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.4\\microsoft.codeanalysis.analyzers.3.3.4.nupkg.sha512",
