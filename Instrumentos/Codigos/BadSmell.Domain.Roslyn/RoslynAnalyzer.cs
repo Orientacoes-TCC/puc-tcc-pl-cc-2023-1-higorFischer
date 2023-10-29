@@ -1,8 +1,6 @@
 ﻿using BadSmellFinder.Domain.Entities;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
-using System.Reflection;
-using System.Xml.Linq;
 
 namespace BadSmell.Domain.Roslyn;
 
@@ -27,6 +25,9 @@ public class RoslynAnalyzer
 
 			if (member is MethodDeclarationSyntax)
 				codeAnalysis.Methods.Add(new CodeMethodInfo(line, member));
+
+			if (member is ClassDeclarationSyntax)
+				codeAnalysis.Classes.Add(new CodeClassInfo(line, member));
 		}
 
 		return codeAnalysis;

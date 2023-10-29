@@ -1,9 +1,15 @@
+using BadSmellFinder.Domain.Entities;
 using BadSmellFinder.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddCors();
+
+builder.Services.AddSingleton<BadSmellFinderStorage>();
+builder.Services.AddSingleton<ProjectAnalysis>();
+
 
 var app = builder.Build();
 
@@ -15,6 +21,19 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapGet("/read", () => new BadSmellFinderService().Find()).WithOpenApi();
+app.MapPost("/read", (BadSmellFinderStorage storage, CodeConfig body) => {
 
+	if(!storage.Analyses.Any())
+		storage.Analyses.AddRange(new BadSmellFinderService(storage).Find());
+
+	return storage;
+}).WithOpenApi();
+
+
+app.MapGet("/clean", (BadSmellFinderStorage storage) => {
+	storage.Clear();
+}).WithOpenApi();
+
+
+app.UseCors(c => c.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
 app.Run();
