@@ -20,32 +20,29 @@ function App() {
 	const [loading, setLoading] = useState(false);
 
 	const fetchAnalysis = () => {
-		axios.post("https://localhost:7289/read", {
-
-		}).then(data => {
+		axios.post("https://localhost:7289/read", {}).then(data => {
 			setItems(data.data);
 		})
 	}
 
-	const clearAnalysis = () => {
-		axios.get("https://localhost:7289/clear").then(() => {
-			setItems({} as BadSmellApp)
-			fetchAnalysis();
-		})
-	}
 
 	const handleClick = (config: CodeConfig) => {
-		axios.post("https://localhost:7289/read", config).then(data => {
-			setItems(data.data);
-		})
+		setLoading(true);
+		axios.post("https://localhost:7289/read", config)
+			.then(data => {
+				setItems(data.data);
+			})
+			.finally(() => {
+				setLoading(false);
+			})
 	}
 
 	useEffect(() => { fetchAnalysis() }, [])
 
 	return items.config && (
 		<div style={{ display: "flex" }}>
-			<ConfigBar config={items?.config} onClick={handleClick} />
-			<div style={{ display: "flex", flexDirection: "column", width: "100%", padding: 10 }}>
+			<ConfigBar loading={loading} config={items?.config} onClick={handleClick} />
+			<div style={{ display: "flex", flexDirection: "column", width: "100%", padding: 10, marginLeft: "20%" }}>
 				<div style={{ width: "100%", marginBottom: 10 }}>
 					<ProjectAnalysisCard projectAnalysis={items.projectAnalysis} />
 				</div>

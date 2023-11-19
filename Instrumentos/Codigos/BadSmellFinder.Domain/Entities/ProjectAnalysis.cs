@@ -1,6 +1,4 @@
-﻿using System.Xml.Schema;
-
-namespace BadSmellFinder.Domain.Entities;
+﻿namespace BadSmellFinder.Domain.Entities;
 
 public class ProjectAnalysis
 {
@@ -13,7 +11,6 @@ public class ProjectAnalysis
 
 	public void Add(CodeAnalysis code)
 	{
-		TotalVerifiedFiles += 1;
 		FilesWithBadSmells += code.BadSmells.Any() ? 1 : 0;
 		TotalBadSmells += code.BadSmells.Count();
 
@@ -21,6 +18,8 @@ public class ProjectAnalysis
 		TotalClasses += code.Classes.Count();
 		TotalMethods += code.Methods.Count();
 	}
+
+	public void AddTotalVerifiedFiles() => TotalVerifiedFiles += 1;
 
 	public void Add(IEnumerable<CodeAnalysis> codes)
 	{

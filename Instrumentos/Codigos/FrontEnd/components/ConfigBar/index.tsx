@@ -1,9 +1,9 @@
-import { Button, Stack, TextField } from "@mui/material"
+import { Button, Stack, TextField, LinearProgress, Typography } from "@mui/material"
 import { useEffect, useState } from "react";
 import { CodeConfig } from "../../models/models";
 
-export function ConfigBar(props: { config: CodeConfig, onClick: any }) {
-	const { config, onClick } = props;
+export function ConfigBar(props: { loading: boolean, config: CodeConfig, onClick: any }) {
+	const { loading, config, onClick } = props;
 
 	const [value, setValue] = useState(config);
 
@@ -18,12 +18,18 @@ export function ConfigBar(props: { config: CodeConfig, onClick: any }) {
 	return (
 		<div style={{
 			minWidth: "20%",
-			width: "30%",
+			width: "20%",
 			background: "rgba(0,0,0,.05)",
 			height: "100vh",
 			borderRadius: 8,
+			position: "fixed"
 		}}>
-			<Stack spacing={3} p={2}>
+			<Stack spacing={3} p={2} style={{ position: "sticky", }}>
+				<div style={{ textAlign: "center", borderBottom: "1px dashed", paddingBottom: 10 }}>
+					<Typography variant="h5">
+						C# Bad Smell Finder
+					</Typography>
+				</div>
 				<TextField
 					value={value?.largeClass}
 					onChange={(e) => changeItemValue(e, "largeClass")}
@@ -69,7 +75,9 @@ export function ConfigBar(props: { config: CodeConfig, onClick: any }) {
 					size="small"
 					fullWidth
 				/>
-				<Button onClick={() => onClick(value)} variant="contained">Recalculate</Button>
+				{loading
+					? <LinearProgress />
+					: <Button onClick={() => onClick(value)} variant="contained">Recalculate</Button>}
 			</Stack>
 		</div>
 	)

@@ -17,7 +17,7 @@ export function ProjectAnalysisStatisticsCard(props: { projectAnalysis: ProjectA
 
 	const avgBadSmellPerTotalFiles = projectAnalysis?.totalBadSmells / projectAnalysis?.totalVerifiedFiles;
 	const avgBadSmellPerFilesWithBadSmell = projectAnalysis?.totalBadSmells / projectAnalysis?.filesWithBadSmells;
-	const percentFilesWithBadSmell = (projectAnalysis?.filesWithBadSmells / projectAnalysis?.totalBadSmells) * 100;
+	const percentFilesWithBadSmell = (projectAnalysis?.filesWithBadSmells / projectAnalysis?.totalVerifiedFiles) * 100;
 
 	return (
 		<div style={{ width: "100%", background: "rgba(0,0,0,.05)", borderRadius: 8, display: "flex" }}>

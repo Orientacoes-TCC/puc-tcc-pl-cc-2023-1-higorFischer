@@ -2,9 +2,16 @@
 
 public class CodeConfig
 {
-	public long LongMethod { get; set; } = 3;
-	public long LongParametersList { get; set; } = 3;
-	public long TooManyMethods { get; set; } = 2;
-	public long TooManyProperties { get; set; } = 2;
-	public long LargeClass { get; set; } = 50;
+	public long LongMethod { get; set; } 
+	public long LongParametersList { get; set; }
+	public long TooManyMethods { get; set; } 
+	public long TooManyProperties { get; set; } 
+	public long LargeClass { get; set; }
+
+	public bool IsValid()
+		=> LongMethod != 0
+		&& LongParametersList != 0
+		&& LargeClass != 0
+		&& TooManyMethods != 0
+		&& TooManyProperties != 0;
 }

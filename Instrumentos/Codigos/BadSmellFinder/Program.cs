@@ -21,10 +21,12 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapPost("/read", (BadSmellFinderStorage storage, CodeConfig body) => {
+app.MapPost("/read", (BadSmellFinderStorage storage, CodeConfig? body) => {
 
-	if(!storage.Analyses.Any())
-		storage.Analyses.AddRange(new BadSmellFinderService(storage).Find());
+	storage.Clear();
+	storage.AddManualConfig(body);
+
+	storage.Analyses.AddRange(new BadSmellFinderService(storage).Find());
 
 	return storage;
 }).WithOpenApi();

@@ -27,10 +27,15 @@ public class BadSmellFinderService
 		var analysis = new List<CodeAnalysis>();
 		foreach (var file in files)
 		{
+			Storage.ProjectAnalysis.AddTotalVerifiedFiles();
 			var roslynAnalyzer = RoslynAnalyzer.Run(file.Key, file.Value);
 			analysis.Add(roslynAnalyzer);
 		}
-		var config = CodeConfigBuilder.Build(analysis);
+
+		var config = (Storage.ManualConfig?.IsValid() ?? false)
+					  ? Storage.ManualConfig
+					  : CodeConfigBuilder.Build(analysis);
+
 		Storage.AddConfig(config);
 		BadSmellCodeFinder.Find(analysis, config);
 
