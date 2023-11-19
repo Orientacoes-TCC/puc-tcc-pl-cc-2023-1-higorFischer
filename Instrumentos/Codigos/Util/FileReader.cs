@@ -3,6 +3,14 @@
 public class FileReader
 {
 	IDictionary<string, string> Files = new Dictionary<string, string>();
+	readonly string Extension;
+	readonly bool Recursively;
+
+	public FileReader(string extension, bool recursively)
+	{
+		Extension = extension;
+		Recursively = recursively;
+	}
 
 	public IDictionary<string, string> Read(string path)
 	{
@@ -36,8 +44,10 @@ public class FileReader
 
 		if (attr.HasFlag(FileAttributes.Directory))
 		{
-			ReadDirectory(Directory.GetDirectories(path));
-			ReadFile(Directory.GetFiles(path, "*.cs"));
+			if(Recursively)
+				ReadDirectory(Directory.GetDirectories(path));
+
+			ReadFile(Directory.GetFiles(path, Extension));
 		}
 		else
 			ReadFile(path);

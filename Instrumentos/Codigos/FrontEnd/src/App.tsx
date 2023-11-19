@@ -8,42 +8,62 @@ import { CodeAnalysisChart } from "../components/CodeAnalysisChart"
 import { CodeAnalysisPieChart } from "../components/CodeAnalysisPieChart"
 import { BadSmellListing } from "../components/BadSmellListing"
 import { ConfigBar } from "../components/ConfigBar"
+import { LinearProgress } from '@mui/material';
 
 interface BadSmellApp {
 	projectAnalysis: ProjectAnalysis;
 	analyses: CodeAnalysis[];
 	config: CodeConfig;
+	hints: CodeConfig[];
 }
 
 function App() {
 	const [items, setItems] = useState({} as BadSmellApp);
+	const [configs, setConfigs] = useState<CodeConfig[]>([]);
 	const [loading, setLoading] = useState(false);
 
-	const fetchAnalysis = () => {
-		axios.post("https://localhost:7289/read", {}).then(data => {
+	const fetchAnalysis = (file: string) => {
+		setLoading(true)
+		axios.post("https://localhost:7289/read", { name: file }).then(data => {
 			setItems(data.data);
+		}).finally(() => {
+			setLoading(false)
 		})
 	}
 
+	const fetchConfigs = async () => {
+		var configs = await axios.get("https://localhost:7289/all")
+		setConfigs(configs.data);
+	}
 
 	const handleClick = (config: CodeConfig) => {
 		setLoading(true);
-		axios.post("https://localhost:7289/read", config)
+		axios.post("https://localhost:7289/add", config)
 			.then(data => {
-				setItems(data.data);
+				fetchConfigs()
 			})
 			.finally(() => {
 				setLoading(false);
 			})
 	}
 
-	useEffect(() => { fetchAnalysis() }, [])
+	useEffect(() => {
+		fetchConfigs();
+	}, [])
 
-	return items.config && (
-		<div style={{ display: "flex" }}>
-			<ConfigBar loading={loading} config={items?.config} onClick={handleClick} />
+	return <div style={{ display: "flex" }}>
+		<ConfigBar
+			hints={items.hints}
+			configs={configs}
+			loading={loading}
+			config={items?.config}
+			onClick={handleClick}
+			onSelectAnalysis={fetchAnalysis}
+		/>
+		{items.config && (
 			<div style={{ display: "flex", flexDirection: "column", width: "100%", padding: 10, marginLeft: "20%" }}>
-				<div style={{ width: "100%", marginBottom: 10 }}>
+				{loading && <LinearProgress />}
+				<div style={{ width: "100ts%", marginBottom: 10 }}>
 					<ProjectAnalysisCard projectAnalysis={items.projectAnalysis} />
 				</div>
 				<div style={{ width: "100%", marginBottom: 10 }}>
@@ -61,8 +81,8 @@ function App() {
 					<BadSmellListing codeAnalysis={items.analyses} />
 				</div>
 			</div>
-		</div >
-	);
+		)}
+	</div>
 }
 
 export default App

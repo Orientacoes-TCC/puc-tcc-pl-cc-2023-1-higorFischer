@@ -35,6 +35,7 @@ export interface CodeAnalysis {
 }
 
 export interface CodeConfig {
+	name: string;
 	longMethod: number;
 	longParametersList: number;
 	tooManyMethods: number;

@@ -1,5 +1,9 @@
 using BadSmellFinder.Domain.Entities;
+using BadSmellFinder.Domain.Services;
 using BadSmellFinder.Services;
+using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
+using Util;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +13,7 @@ builder.Services.AddCors();
 
 builder.Services.AddSingleton<BadSmellFinderStorage>();
 builder.Services.AddSingleton<ProjectAnalysis>();
+builder.Services.AddSingleton<BadSmellConfigLoader>();
 
 
 var app = builder.Build();
@@ -21,16 +26,27 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.MapPost("/read", (BadSmellFinderStorage storage, CodeConfig? body) => {
-
+app.MapPost("/read", (BadSmellConfigLoader configLoader, BadSmellFinderStorage storage, [FromBody] CodeConfig? codeConfig) => {
 	storage.Clear();
-	storage.AddManualConfig(body);
+	var config = configLoader.ReadConfig(codeConfig.Name);
+	var badSmellService = new BadSmellFinderService(storage);
 
-	storage.Analyses.AddRange(new BadSmellFinderService(storage).Find());
-
+	storage.AddHints(badSmellService.Hints);
+	storage.Analyses.AddRange(badSmellService.Find("E:\\42\\IsaBackend", config));
 	return storage;
 }).WithOpenApi();
 
+app.MapPost("/add", (BadSmellConfigLoader configLoader, BadSmellFinderStorage storage, CodeConfig? body) => {
+	return configLoader.TryAddConfig(body);
+}).WithOpenApi();
+
+app.MapPost("/file", (BadSmellConfigLoader configLoader, string name) => {
+	return configLoader.ReadConfig(name);
+}).WithOpenApi();
+
+app.MapGet("/all", (BadSmellConfigLoader configLoader) => {
+	return configLoader.All();
+}).WithOpenApi();
 
 app.MapGet("/clean", (BadSmellFinderStorage storage) => {
 	storage.Clear();

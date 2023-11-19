@@ -8,39 +8,39 @@ public class BadSmellCodeFinder
 	{
 		if (codeConfig == null) return;
 
-		foreach(var code in codeAnalyses)
+		foreach(var analysis in codeAnalyses)
 		{
-			if(code == null) continue;
+			if(analysis == null) continue;
 
-			if (code.Lines > codeConfig.LargeClass)
-				code.BadSmells.Add(LargeClass(
-					("Name", code.Name),
-					("Lines", code.Lines.ToString())
+			if (analysis.Lines > codeConfig.LargeClass)
+				analysis.BadSmells.Add(LargeClass(
+					("Name", analysis.Name),
+					("Lines", analysis.Lines.ToString())
 				));
 
-			if (code.Methods.Count() > codeConfig.TooManyMethods)
-				code.BadSmells.Add(TooManyMethods(
-					("Name", code.Name),
-					("Methods", code.Methods.Count().ToString())
+			if (analysis.Methods.Count() > codeConfig.TooManyMethods)
+				analysis.BadSmells.Add(TooManyMethods(
+					("Name", analysis.Name),
+					("Methods", analysis.Methods.Count().ToString())
 				));
 
-			if (code.Properties.Count() > codeConfig.TooManyProperties)
-				code.BadSmells.Add(TooManyProperties(
-					("Name", code.Name),
-					("Properties", code.Properties.Count().ToString())
+			if (analysis.Properties.Count() > codeConfig.TooManyProperties)
+				analysis.BadSmells.Add(TooManyProperties(
+					("Name", analysis.Name),
+					("Properties", analysis.Properties.Count().ToString())
 				));
 
-			foreach (var method in code.Methods)
+			foreach (var method in analysis.Methods)
 			{
 				if (method.Parameters > codeConfig.LongParametersList)
-					code.BadSmells.Add(LongParameterList(
+					analysis.BadSmells.Add(LongParameterList(
 						("Name", method.Name),
 						("Parameters", method.Parameters.ToString()),
 						("Line", method.Line.ToString())
 					));
 
 				if (method.Lines > codeConfig.LongMethod)
-					code.BadSmells.Add(LongMethod(
+					analysis.BadSmells.Add(LongMethod(
 						("Name", method.Name),
 						("Lines", method.Lines.ToString()),
 						("Line", method.Line.ToString())

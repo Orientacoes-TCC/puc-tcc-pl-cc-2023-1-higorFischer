@@ -7,22 +7,24 @@ namespace BadSmellFinder.Services;
 
 public class BadSmellFinderService
 {
-	readonly CodeConfigBuilder CodeConfigBuilder;
 	readonly BadSmellCodeFinder BadSmellCodeFinder;
 	readonly RoslynAnalyzer RoslynAnalyzer;
 	readonly BadSmellFinderStorage Storage;
+	public readonly IDictionary<string, CodeConfig> Hints;
 
 	public BadSmellFinderService(BadSmellFinderStorage storage)
 	{
-		CodeConfigBuilder = new CodeConfigBuilder(new QuartileCalculator());
 		BadSmellCodeFinder = new BadSmellCodeFinder();
 		RoslynAnalyzer = new RoslynAnalyzer();
+		Hints = new Dictionary<string, CodeConfig>();
 		Storage = storage;
 	}
 
-	public IEnumerable<CodeAnalysis> Find()
+	public IEnumerable<CodeAnalysis> Find(string filePath, CodeConfig? config)
 	{
-		var files = new FileReader().Read("E:\\42\\IsaBackend");
+		if (config == null) return Enumerable.Empty<CodeAnalysis>();
+
+		var files = new FileReader("*.cs", recursively: true).Read(filePath);
 
 		var analysis = new List<CodeAnalysis>();
 		foreach (var file in files)
@@ -32,9 +34,8 @@ public class BadSmellFinderService
 			analysis.Add(roslynAnalyzer);
 		}
 
-		var config = (Storage.ManualConfig?.IsValid() ?? false)
-					  ? Storage.ManualConfig
-					  : CodeConfigBuilder.Build(analysis);
+		Hints.Add("quartille", new CodeConfigBuilder(new QuartileCalculator()).Build(analysis));
+		Hints.Add("average", new CodeConfigBuilder(new AverageCalculator()).Build(analysis));
 
 		Storage.AddConfig(config);
 		BadSmellCodeFinder.Find(analysis, config);
@@ -42,4 +43,5 @@ public class BadSmellFinderService
 		Storage.ProjectAnalysis.Add(analysis);
 		return analysis.Where(c => c.BadSmells.Count() > 0);
 	}
+
 }
