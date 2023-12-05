@@ -28,6 +28,9 @@ public class RoslynAnalyzer
 
 			if (member is ClassDeclarationSyntax)
 				codeAnalysis.Classes.Add(new CodeClassInfo(line, member));
+
+			if (member is ConstructorDeclarationSyntax)
+				codeAnalysis.Constructors.Add(new CodeConstructorInfo(line, member));
 		}
 
 		return codeAnalysis;

@@ -23,6 +23,7 @@ public class BadSmellFinderStorage
 		});
 	}
 
+
 	public void Clear()
 	{
 		Analyses = new List<CodeAnalysis>();

@@ -139,3 +139,4 @@ C:\Users\HigorLopes\github-classroom\Orientacoes-TCC\puc-tcc-pl-cc-2023-1-higorF
 C:\Users\HigorLopes\github-classroom\Orientacoes-TCC\puc-tcc-pl-cc-2023-1-higorFischer\Instrumentos\Codigos\BadSmellFinder\obj\Debug\net7.0\BadSmellFinder.genruntimeconfig.cache
 C:\Users\HigorLopes\github-classroom\Orientacoes-TCC\puc-tcc-pl-cc-2023-1-higorFischer\Instrumentos\Codigos\BadSmellFinder\obj\Debug\net7.0\ref\BadSmellFinder.dll
 C:\Users\HigorLopes\github-classroom\Orientacoes-TCC\puc-tcc-pl-cc-2023-1-higorFischer\Instrumentos\Codigos\BadSmellFinder\bin\Debug\net7.0\Quartille.bs.config
+C:\Users\HigorLopes\github-classroom\Orientacoes-TCC\puc-tcc-pl-cc-2023-1-higorFischer\Instrumentos\Codigos\BadSmellFinder\bin\Debug\net7.0\Sonar.bs.config

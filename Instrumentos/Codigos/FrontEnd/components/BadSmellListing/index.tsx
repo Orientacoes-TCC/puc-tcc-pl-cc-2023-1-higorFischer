@@ -33,10 +33,10 @@ export function BadSmellListing(props: { codeAnalysis: CodeAnalysis[] }) {
 							</div>
 							<div style={{ height: "100px", overflow: "auto" }}>
 								{items?.map((item: any) => {
-									const { Name, ...otherParameters } = item.parameters;
+									const { File, ...otherParameters } = item.parameters;
 
 									return <div style={{ fontSize: "0.7rem" }}>
-										{item?.parameters?.Name} ({JSON.stringify(otherParameters)})
+										{File} ({JSON.stringify(otherParameters)})
 									</div>
 								})}
 							</div>

@@ -29,6 +29,8 @@ public class BadSmellFinderService
 		var analysis = new List<CodeAnalysis>();
 		foreach (var file in files)
 		{
+			if (file.Key.ToLower().Contains("test") || file.Key.ToLower().Contains("fake")) continue;
+
 			Storage.ProjectAnalysis.AddTotalVerifiedFiles();
 			var roslynAnalyzer = RoslynAnalyzer.Run(file.Key, file.Value);
 			analysis.Add(roslynAnalyzer);
